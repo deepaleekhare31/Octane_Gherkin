@@ -12,7 +12,7 @@ import cucumber.api.CucumberOptions;
 		features = {"features"},
 		glue = {"stepDefinitions"},
 		tags= {"@TID4120175REV0.2.0"}
-//		plugin={"junit:OctaneGherkinResults.xml"}
+		plugin={"junit:target/cucumber.xml"}
 		)
 
 public class TestRunner {
