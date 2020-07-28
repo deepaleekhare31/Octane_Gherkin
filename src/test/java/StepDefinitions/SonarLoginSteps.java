@@ -37,5 +37,7 @@ public class SonarLoginSteps {
 		driver.findElement(By.id("login")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.xpath("//button[text()=\"Log in\"]")).click();
+		driver.close();
+		driver.quit();
 	}
 }
