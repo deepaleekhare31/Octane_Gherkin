@@ -33,6 +33,11 @@
 				<artifactId>selenium-java</artifactId>
 				<version>3.141.59</version>
 			</dependency>
+		    <dependency>
+		        <groupId>com.hpe.alm.octane</groupId>
+		        <artifactId>octane-cucumber-jvm</artifactId>
+		        <version>12.53.22</version>
+		    </dependency>
 		</dependencies>
 
 	<build>
