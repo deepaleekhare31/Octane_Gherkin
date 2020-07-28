@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import io.cucumber.java.en.*;
+import cucumber.api.java.en.*;
+//import io.cucumber.java.en.*;
 
 public class SonarLoginSteps {
 	
@@ -24,10 +24,11 @@ public class SonarLoginSteps {
 		driver.manage().window().maximize();
 	}
 
-	@Given("user is on Sonarque home page")
-	public void user_is_on_Sonarque_home_page() {
-//		driver.get("http://rules:9000");
-		driver.get("http://localhost:9000");
+	@Given("user is on Google home page")
+	public void user_is_on_Google_home_page() {
+		driver.get("http://google.com");
+		driver.close();
+		driver.quit();
 	}
 
 	@When("user clicks on login button")

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><features version="1"><feature name="Test Sonar Gherkin Login Page" path="features\test_TACOE-4120175.feature" started="1595938134569" tag="@TID4120175REV0.2.0"><file><![CDATA[#Auto generated Octane revision tag
+@TID4120175REV0.2.0
+Feature: Test Sonar Gherkin Login Page
+
+  Scenario: Login with valid credentials
+    Given Browser is Open
+    And user is on Google home page
+    #When user clicks on login button
+    #Then user logins with valid admin and admin
+]]></file><scenarios><scenario name="Login with valid credentials"><steps><step duration="7680192247" name="Given Browser is Open" status="passed"/><step duration="3831176667" name="And user is on Google home page" status="passed"/></steps></scenario></scenarios></feature></features>
