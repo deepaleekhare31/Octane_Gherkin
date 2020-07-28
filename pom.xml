@@ -9,7 +9,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar.sources>src/test/resources/feature</sonar.sources>
 	</properties>
 
 		<dependencies>
