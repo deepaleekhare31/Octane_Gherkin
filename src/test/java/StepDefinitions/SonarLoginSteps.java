@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.cucumber.java.en.*;
 
 public class SonarLoginSteps {
@@ -13,8 +15,10 @@ public class SonarLoginSteps {
 	
 	@Given("Browser is Open")
 	public void browser_is_Open() {
+		ChromeOptions chromeOptions= new ChromeOptions();
+		chromeOptions.setBinary("C:\\Users\\deekhare\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 		System.getProperty("webdriver.chrome.driver", "D:/UTF_setup_3.4/UTF_setup_py3/UTF_Installer/UTF/UnifiedTestFramework/ExternalTools/Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(chromeOptions);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

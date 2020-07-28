@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.751">
-<testcase classname="Test Sonar Gherkin Login Page" name="Login with valid credentials" time="10.613">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.616">
+<testcase classname="Test Sonar Gherkin Login Page" name="Login with valid credentials" time="11.484">
 <system-out><![CDATA[Given Browser is Open.......................................................passed
 And user is on Sonarque home page...........................................passed
 When user clicks on login button............................................passed
