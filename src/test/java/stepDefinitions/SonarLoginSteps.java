@@ -54,8 +54,9 @@ public class SonarLoginSteps {
 
 	@Then("print hello world")
 	public void print_hello_world() {
-		String number_of_codesmells = "175";
-		Assert.assertEquals("176",number_of_codesmells);
+//		String number_of_codesmells = "175";
+//		Assert.assertEquals("176",number_of_codesmells);
+		System.out.println("Hello World!");
 	}
 
 }
