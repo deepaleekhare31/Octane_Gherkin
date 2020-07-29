@@ -11,7 +11,8 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(
 		features = {"features"},
 		glue = {"stepDefinitions"},
-		tags= {"@TID4120175REV0.2.0"},
+//		tags= {"@TID4120175REV0.2.0"},
+		tags= {"@TID4140125REV0.2.0"},
 		plugin={"junit:target/cucumber.xml"}
 		)
 

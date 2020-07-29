@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import cucumber.api.java.en.*;
+import org.junit.Assert;
 //import io.cucumber.java.en.*;
 
 public class SonarLoginSteps {
@@ -45,4 +46,16 @@ public class SonarLoginSteps {
 		driver.close();
 		driver.quit();
 	}
+	
+	@Given("user is admin")
+	public void user_is_admin() {
+	    System.out.println("User is the admin");
+	}
+
+	@Then("print hello world")
+	public void print_hello_world() {
+		String number_of_codesmells = "175";
+		Assert.assertEquals("176",number_of_codesmells);
+	}
+
 }

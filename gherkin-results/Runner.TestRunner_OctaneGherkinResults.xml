@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><features version="1"><feature name="hello" path="features\Check_TACOE_Gherkin-4140125.feature" started="1596029874785" tag="@TID4140125REV0.2.0"><file><![CDATA[#Auto generated Octane revision tag
+@TID4140125REV0.2.0
+Feature: hello
+
+  Scenario: Print Hello World
+    Given user is admin
+    Then print hello world
+]]></file><scenarios><scenario name="Print Hello World"><steps><step duration="127901380" name="Given user is admin" status="passed"/><step duration="1528244" name="Then print hello world" status="failed"><error_message><![CDATA[org.junit.ComparisonFailure: expected:<17[6]> but was:<17[5]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.SonarLoginSteps.print_hello_world(SonarLoginSteps.java:58)
+	at ✽.Then print hello world(Check_TACOE_Gherkin-4140125.feature:7)
+]]></error_message></step></steps></scenario></scenarios></feature></features>
